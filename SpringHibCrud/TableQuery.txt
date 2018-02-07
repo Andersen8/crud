@@ -1,0 +1,46 @@
+DROP TABLE IF EXISTS test.books;
+CREATE TABLE test.books
+(
+  id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  title VARCHAR(100) NOT NULL,
+  description VARCHAR(255) NOT NULL,
+  author VARCHAR(100) NOT NULL,
+  isbn VARCHAR(20) NOT NULL,
+  printYear INT NOT NULL,
+  readAlready BOOLEAN
+);
+CREATE UNIQUE INDEX books_id_uindex ON test.books (id);
+INSERT INTO books(title, description, author, isbn, printYear, readAlready)
+VALUES('Avalon', 'About kingdom', 'Arthur Konan Doil', 'R11', 1996, 0);
+INSERT INTO books(title, description, author, isbn, printYear, readAlready)
+VALUES('Bastard', 'About War', 'Unknoun0', 'R12', 1997, 1);
+INSERT INTO books(title, description, author, isbn, printYear, readAlready)
+VALUES('Game of Thrones', 'About intrig', 'George M', 'R13', 1998, 0);
+INSERT INTO books(title, description, author, isbn, printYear, readAlready)
+VALUES('Bastard99', 'About War', 'Unknoun0', 'R13', 1999, 1);
+INSERT INTO books(title, description, author, isbn, printYear, readAlready)
+VALUES('Bastard1', 'About War1', 'Unknoun1', 'R14', 2000, 0);
+INSERT INTO books(title, description, author, isbn, printYear, readAlready)
+VALUES('Bastard2', 'About War2', 'Unknoun2', 'R15', 2001, 0);
+INSERT INTO books(title, description, author, isbn, printYear, readAlready)
+VALUES('Bastard3', 'About War3', 'Unknoun3', 'R16', 2002, 0);
+INSERT INTO books(title, description, author, isbn, printYear, readAlready)
+VALUES('Bastard4', 'About War4', 'Unknoun4', 'R17', 2003, 0);
+INSERT INTO books(title, description, author, isbn, printYear, readAlready)
+VALUES('Bastard5', 'About War5', 'Unknoun5', 'R18', 2004, 0);
+INSERT INTO books(title, description, author, isbn, printYear, readAlready)
+VALUES('Bastard6', 'About War6', 'Unknoun6', 'R19', 2005, 0);
+INSERT INTO books(title, description, author, isbn, printYear, readAlready)
+VALUES('Bastard', 'About War', 'Unknoun0', 'R20', 2006, 0);
+INSERT INTO books(title, description, author, isbn, printYear, readAlready)
+VALUES('Game of Thrones1', 'About intrig1', 'George M1', 'R21', 2007, 0);
+INSERT INTO books(title, description, author, isbn, printYear, readAlready)
+VALUES('Game of Thrones2', 'About intrig2', 'George M2', 'R22', 2008, 0);
+INSERT INTO books(title, description, author, isbn, printYear, readAlready)
+VALUES('Game of Thrones3', 'About intrig3', 'George M3', 'R23', 2009, 0);
+INSERT INTO books(title, description, author, isbn, printYear, readAlready)
+VALUES('Game of Thrones4', 'About intrig4', 'George M4', 'R24', 2010, 0);
+INSERT INTO books(title, description, author, isbn, printYear, readAlready)
+VALUES('Game of Thrones5', 'About intrig5', 'George M5', 'R25', 2011, 0);
+INSERT INTO books(title, description, author, isbn, printYear, readAlready)
+VALUES('Game of Thrones6', 'About intrig6', 'George M6', 'R26', 2012, 0);
